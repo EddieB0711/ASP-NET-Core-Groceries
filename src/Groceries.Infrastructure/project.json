@@ -1,0 +1,24 @@
+{
+  "version": "1.0.0-*",
+
+  "dependencies": {
+    "FluentValidation.AspNetCore": "6.4.0-beta3",
+    "Microsoft.AspNet.WebApi.Client": "5.2.3",
+    "Microsoft.Extensions.Configuration": "1.0.0",
+    "Microsoft.Extensions.Configuration.Json": "1.0.0",
+    "StructureMap": "4.4.1",
+    "Web.Contracts": "1.0.0-*",
+    "Web.Infrastructure": "1.0.0-*",
+    "Groceries.Contracts": "1.0.0-*",
+    "Microsoft.AspNet.SignalR.Core": "2.2.1",
+    "Groceries.MessageBroker": "1.0.0-*"
+  },
+
+  "frameworks": {
+    "net46": {
+      "dependencies": {
+        "Web.MessageBroker": "1.0.0-*"
+      }
+    }
+  }
+}

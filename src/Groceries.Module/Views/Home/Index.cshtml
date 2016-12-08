@@ -1,0 +1,37 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="col-md-6 col-md-offset-3">
+
+    <div class="form-group">
+        <table class="table table-responsive table-striped">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            
+            <tbody data-bind="foreach:items">
+                <tr>
+                    <td data-bind="text: $data.Item"></td>
+                    <td data-bind="text: $data.Quantity"></td>
+                    <td>
+                        <a data-bind="attr: { 'href': '@Url.Action("Index", "Manage")/Index/' + $data.Id }" class="btn btn-primary">Manage</a>
+                    </td>
+                </tr>
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+@section scripts {
+    <script src="~/Scripts/jquery.signalR-2.2.1.js"></script>
+    <script src="~/SignalR/hubs"></script>
+    <script src="~/lib/knockout/dist/knockout.js"></script>
+    <script src="~/js/groceries.js"></script>
+}

@@ -1,0 +1,14 @@
+﻿{
+  "version": "1.0.0-*",
+
+  "dependencies": {
+    "NServiceBus": "6.0.0",
+    "NServiceBus.StructureMap": "6.0.0",
+    "Groceries.Contracts": "1.0.0-*",
+    "Web.Contracts": "1.0.0-*"
+  },
+
+  "frameworks": {
+    "net46": {}
+  }
+}

@@ -1,0 +1,33 @@
+﻿@model Groceries.Module.Models.GroceryViewModel
+@{
+    ViewBag.Title = "Create Grocery";
+}
+
+<div class="row">
+
+    <div class="col-md-6 col-md-offset-3">
+
+        <h1>Create Your Grocery Item</h1>
+
+        <form method="post" asp-controller="Create" asp-action="Create">
+
+            <div class="form-group">
+                <label asp-for="Item" for="item"></label>
+                <input asp-for="Item" class="form-control" id="item" name="item" placeholder="Item"/>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Quantity" for="quantity"></label>
+                <input asp-for="Quantity" type="number" min="1" value="1" class="form-control" id="quantity" name="quantity" placeholder="Quantity"/>
+            </div>
+
+            <div class="form-group">
+                <a asp-controller="Home" asp-action="Index" class="btn btn-default">Cancel</a>
+                <input type="submit" value="Add" class="btn btn-success"/>
+            </div>
+
+        </form>
+
+    </div>
+
+</div>

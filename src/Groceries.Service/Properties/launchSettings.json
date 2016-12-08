@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Groceries.Service": {
+      "commandName": "Project",
+      "launchUrl": "http://localhost:5000"
+    }
+  }
+}

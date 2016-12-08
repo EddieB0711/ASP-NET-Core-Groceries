@@ -1,0 +1,30 @@
+﻿@model Groceries.Module.Models.GroceryViewModel
+@{
+    ViewBag.Title = "Manage";
+}
+
+<div class="col-md-6 col-md-offset-3">
+
+    <form asp-controller="Manage" asp-action="Update" method="post">
+
+        @Html.HiddenFor(x => x.Id)
+
+        <div class="form-group">
+            <label asp-for="Item" for="item"></label>
+            <input asp-for="Item" class="form-control" id="item" name="item" />
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Quantity" for="quantity"></label>
+            <input asp-for="Quantity" type="number" min="1" class="form-control" id="quantity" name="quantity" />
+        </div>
+
+        <div class="form-group">
+            <a asp-controller="Home" asp-action="Index" class="btn btn-default">Cancel</a>
+            <input type="submit" value="Update" class="btn btn-success" />
+            @Html.ActionLink("Delete", "Delete", Model, new { @class = "btn btn-danger" })
+        </div>
+
+    </form>
+
+</div>

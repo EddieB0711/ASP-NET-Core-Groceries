@@ -1,0 +1,29 @@
+{
+  "version": "1.0.0-*",
+
+  "dependencies": {
+    "FluentValidation.AspNetCore": "6.4.0-beta3",
+    "Microsoft.EntityFrameworkCore.Relational": "1.0.1",
+    "Microsoft.EntityFrameworkCore.SqlServer": "1.0.1",
+    "Microsoft.Extensions.Configuration": "1.0.0",
+    "Microsoft.Extensions.Configuration.Json": "1.0.0",
+    "NETStandard.Library": "1.6.0",
+    "StructureMap": "4.4.1",
+    "Nancy": "2.0.0-barneyrubble",
+    "Groceries.Contracts": "1.0.0-*",
+    "Web.Contracts": "1.0.0-*",
+    "Web.Infrastructure": "1.0.0-*"
+  },
+
+  "frameworks": {
+    "net46": {
+      "dependencies": {
+        "Groceries.MessageBroker": "1.0.0-*",
+        "Web.MessageBroker": "1.0.0-*"
+      }
+    },
+    "netstandard1.6": {
+      "imports": "dnxcore50"
+    }
+  }
+}

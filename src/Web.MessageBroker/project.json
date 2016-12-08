@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0-*",
+
+  "dependencies": {
+    "NServiceBus": "6.0.0",
+    "NServiceBus.StructureMap": "6.0.0",
+    "StructureMap": "4.4.1",
+    "Web.Contracts": "1.0.0-*",
+    "Web.Infrastructure": "1.0.0-*"
+  },
+
+  "frameworks": {
+    "net46": {} 
+  }
+}

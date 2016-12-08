@@ -1,0 +1,23 @@
+{
+  "version": "1.0.0-*",
+  "buildOptions": {
+    "emitEntryPoint": true,
+    "copyToOutput": "appsettings.json"
+  },
+
+  "dependencies": {
+    "Microsoft.EntityFrameworkCore.Relational": "1.0.1",
+    "Microsoft.EntityFrameworkCore.SqlServer": "1.0.1",
+    "Web.Contracts": "1.0.0-*",
+    "Nancy": "2.0.0-barneyrubble",
+    "Microsoft.AspNetCore.Hosting": "1.0.0",
+    "Microsoft.AspNetCore.Server.Kestrel": "1.0.0",
+    "Microsoft.AspNetCore.Owin": "1.0.0",
+    "Groceries.Service.Infrastructure": "1.0.0-*",
+    "StructureMap": "4.4.1"
+  },
+
+  "frameworks": {
+    "net46": {}
+  }
+}
